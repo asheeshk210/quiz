@@ -235,6 +235,10 @@ ul {
         border-radius: 5px;
         width: 20%;
     }
+     .quiz_box {
+        width: 90%;
+        height: 80%;
+    }
 }
 
 
