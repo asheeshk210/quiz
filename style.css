@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #511281;
+}
+
+.box {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    font-family: 'KoHo', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    font-size: 7vw;
+}
+
+.form_box {
+    text-align: center;
+}
+
+.nameofuser {
+    width: 50%;
+    background-color: #511281;
+    outline: none;
+    border: 2px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: white;
+    padding: 0% 2%;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.btn {
+    width: 50%;
+    border-radius: 50px;
+    background-color: white;
+    padding: 2%;
+    color: #21094e;
+    font-size: 2vw;
+    margin-top: 3%;
+    box-shadow: 0 8px #999;
+}
+
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        top: 20%;
+    }
+    h1 {
+        font-size: 11vw;
+    }
+    .name {
+        width: 60%;
+        font-size: 6vw;
+    }
+    .btn {
+        font-size: 5vw;
+    }
+    .nameofuser {
+        font-size: 4vw;
+    }
+}
+
+
+/* *******************************************  quiz page css start*************************** */
+
+.quiz_box {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    box-shadow: 0px 2px 5px 3px rgb(127, 133, 219);
+    width: 60%;
+    height: 80%;
+    background-color: white;
+}
+
+.quiz_header {
+    background: #4ca1a3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.user,
+h5 {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+}
+
+#qname {
+    background: #4ca1a3;
+    font-size: 80%;
+    text-transform: capitalize;
+}
+
+.timer {
+    background: #511281;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    padding: 1% 5%;
+}
+
+.quiz_body {
+    position: absolute;
+    width: 100%;
+    height: 21rem;
+    padding: 5%;
+}
+
+h2 {
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.option_group {
+    padding-left: 1%;
+}
+
+.option {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 50px;
+    border: 2px solid #4ca1a3;
+    width: 40%;
+}
+
+.option:hover {
+    border: 2px solid #511281;
+    transition: 0.3s;
+}
+
+.option:active {
+    background-color: #511281;
+    color: white;
+}
+
+.next_btn {
+    width: 20%;
+    background: #511281;
+    color: white;
+    border-radius: 50px;
+    margin-left: 2%;
+    padding: 1%;
+    box-shadow: 0 5px #999;
+    border: none;
+}
+
+.next_btn:focus {
+    outline: 0;
+}
+
+.next_btn:checked {
+    outline: none;
+}
+
+.next_btn:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.active {
+    background-color: #511281;
+    color: white !important;
+}
+
+@media only screen and (max-width:1060px) {
+    h5 {
+        font-size: 80%;
+    }
+    .next_btn {
+        font-size: 0.7rem;
+        width: 30%;
+        border-radius: 50px;
+        margin-left: 2%;
+        padding: 1%;
+    }
+    .timer {
+        width: 20%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    h5 {
+        font-size: 45%;
+    }
+    .quebox {
+        font-size: 0.7rem;
+    }
+    .option {
+        width: 80%;
+    }
+    .next_btn {
+        font-size: 0.7rem;
+        width: 60%;
+        border-radius: 50px;
+        margin-left: 2%;
+        padding: 1%;
+    }
+    .timer {
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.5rem;
+        border-radius: 5px;
+        width: 20%;
+    }
+}
+
+
+/* ****************************** style for end.html*************** */
+
+.wrapper {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.picon,
+.ficon {
+    font-size: 20em !important;
+    color: white;
+    margin-top: 50%;
+}
+
+
+/* 
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 300px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
